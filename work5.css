@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: linear-gradient(rgba(68, 68, 68, 0.75),rgba(83, 83, 83, 0.75)),url(images/image.jpg);
+    background-size : cover;
+    background-position : center;
+}
+.main{
+    width: 200px;
+    margin: 100px auto 0px auto;
+}
+h3{
+    text-align: center;
+    padding: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.register{
+    background-color: rgba(0,0,0,0.5);
+    width: 200%;
+    font-size: 15px;
+    border-radius: 30px;
+    border: 1px soid rgba(201, 201, 201, 0.3);
+    box-shadow: 2px 2px 15px rgba(0,0,0,0.3);
+    color:white;
+    margin-right: 400px;
+}
+form#register{
+    margin: 35px;
+}
+label{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    font-style: italic;
+}
+input#name{
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    outline: 0;
+    padding: 7px;
+    background-color: white;
+    box-shadow: inset 1px 1px 5px rgba(0,0,0,0.3);
+}
+input#submit{
+    width: 200px;
+    padding: 7px;
+    border-radius: 3px;
+    background-color: white;
+    box-shadow: inset 1px 1px 5px rgba(0,0,0,0.3);
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
+    border-radius: 3px;
+    background-color: yellow;
+    color:black;
+    cursor: pointer;
+    border: 1px solid white;
+    box-shadow: 1px 1px 5px black;
+    margin-bottom: 20px;
+}
+label,span,h3{
+    text-shadow: 1px 1px 5px black;
+}
+.nav {
+        width: 75%;
+        margin: auto;
+        padding: -30px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+.logo{
+        width: 200px;
+        cursor: pointer;
+        margin-left: -250px;
+        margin-top: -50px;
+    }
+.nav ul li {
+        list-style: none;
+        display: inline-block;
+        margin: 0 10px;
+        position: relative;
+    }
+.nav ul li a{
+        text-decoration: none;
+        color: white;
+        text-transform: uppercase;
+    }
+.nav ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: yellow;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+}
+.nav ul li:hover::after{
+    width: 100%;
+}
